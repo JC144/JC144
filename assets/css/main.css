@@ -98,8 +98,9 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: rgba(0,0,0,.75);
+		font-family: Lato,Helvetica Neue,Helvetica,sans-serif;
+		font-variant-ligatures: common-ligatures;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -122,8 +123,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
-		font-weight: 400;
+		color: rgba(0,0,0,.75);
+		font-weight: bold;
 	}
 
 	em, i {
@@ -132,6 +133,11 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -175,6 +181,14 @@ input, select, textarea {
 		font-size: 0.7em;
 		line-height: 1.5em;
 	}
+	
+	h1:after, h2:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: .33em;
+    border-bottom: 1px solid hsla(0,0%,50%,.33);
+}
 
 	sub {
 		font-size: 0.8em;
